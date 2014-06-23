@@ -7,6 +7,9 @@ sys.path.insert(0, os.path.normpath(os.path.join(here, '../')))
 
 import jumble_permutations_generator
 
-word = sys.argv[1]
-print 'Possible Combinations for: {}'.format(word)
-print jumble_permutations_generator.JumblePermutationsGenerator.jumble(word)
+try:
+    word = sys.argv[1]
+    print 'Possible Combinations for: {}'.format(word)
+    print jumble_permutations_generator.JumblePermutationsGenerator.jumble(word)
+except IndexError:
+    print 'Error: Please enter a word like `fruit` to see possible jumbles.'
