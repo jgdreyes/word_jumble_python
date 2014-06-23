@@ -25,6 +25,7 @@ Possible Combinations for: 0909
 
 
 ## Implementation Notes
+- If input is a dictionary word, output list will include input word.  So [god] will return [god], but [odg] will not return [odg].
 - Filters both input and dictionary values for [a-z]
 - Dictionary lookup against scowl-7.1/final (downloaded from http://wordlist.aspell.net/)
 
