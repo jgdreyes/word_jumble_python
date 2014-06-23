@@ -8,7 +8,7 @@ Word Jumble Solver written in Python
 
 ```
 $ ./bin/solve_jumble
-Please enter a word like [fruit] to see possible jumbles.
+Please enter a word like `fruit` to see possible jumbles.
 
 $ ./bin/solve_jumble <word>
 Possible Combinations for: <word>
@@ -26,9 +26,10 @@ Possible Combinations for: 0909
 
 ## Implementation Notes
 - Filters both input and dictionary values for [a-z]
-- Dictionary lookup against scowl-7.1/final
+- Dictionary lookup against scowl-7.1/final (downloaded from http://wordlist.aspell.net/)
 
   ```
+  # Once downloaded, use command below to generate the dictionary
   $ cat english-words.10 english-words.20 english-words.35 english-words.40 english-words.50 > all_english_words.txt
   ```
 
