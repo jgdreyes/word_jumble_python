@@ -48,7 +48,7 @@ class JumblePermutationsGenerator:
         self._setup_dictionary()
 
     def get_words(self):
-        for jumble_length in range(2, self.string_length):
+        for jumble_length in range(2, self.string_length + 1):
             self.append_jumbles_in_length_of(jumble_length)
         return self.word_list.keys()
 

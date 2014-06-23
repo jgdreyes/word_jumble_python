@@ -7,12 +7,20 @@ Word Jumble Solver written in Python
 ## How to Run
 
 ```
-$ ./bin/jumble
-Please enter a word like `fruit` to see possible jumbles.
+$ ./bin/solve_jumble
+Please enter a word like [fruit] to see possible jumbles.
 
-$ ./bin/jumble <word>
+$ ./bin/solve_jumble <word>
 Possible Combinations for: <word>
 [...]
+
+$ ./bin/solve_jumble ofot
+Possible Combinations for: ofot
+['foot', 'of', 'too', 'oft', 'to']
+
+$ ./bin/solve_jumble 0909
+Possible Combinations for: 0909
+[]
 ```
 
 
